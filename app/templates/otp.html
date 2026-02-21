@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form id="otpForm" class="glass p-10 rounded-3xl max-w-xl mx-auto space-y-4">
+  <h2 class="text-3xl font-bold">OTP Verification</h2>
+  <input name="email" type="email" placeholder="Email" class="input" required />
+  <input name="otp" placeholder="6-digit OTP" class="input" required />
+  <button class="btn-primary w-full">Verify OTP</button>
+</form>
+{% endblock %}

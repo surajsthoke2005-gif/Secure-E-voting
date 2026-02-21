@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<form id="loginForm" class="glass p-10 rounded-3xl max-w-xl mx-auto space-y-4">
+  <h2 class="text-3xl font-bold">Voter Login</h2>
+  <input name="email" type="email" placeholder="Email" class="input" required />
+  <input name="password" type="password" placeholder="Password" class="input" required />
+  <button type="button" onclick="openWebcam('login')" class="btn-secondary w-full">Open Webcam + Blink Check</button>
+  <p id="blinkStatus" class="text-sm text-slate-300">Blink status: pending</p>
+  <button class="btn-primary w-full">Authenticate</button>
+</form>
+{% include 'partials/webcam_modal.html' %}
+{% endblock %}
