@@ -1,0 +1,10 @@
+<div id="webcamModal" class="hidden fixed inset-0 bg-black/70 z-50 items-center justify-center">
+  <div class="glass p-6 rounded-2xl max-w-2xl w-full">
+    <h3 class="text-xl font-semibold mb-3">Live Camera Capture</h3>
+    <video id="webcamVideo" autoplay class="w-full rounded-xl"></video>
+    <div class="flex gap-3 mt-4">
+      <button onclick="captureFrame()" class="btn-primary">Capture</button>
+      <button onclick="closeWebcam()" class="btn-secondary">Close</button>
+    </div>
+  </div>
+</div>

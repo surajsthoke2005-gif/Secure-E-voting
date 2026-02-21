@@ -1,0 +1,7 @@
+body { font-family: Inter, system-ui, sans-serif; }
+.glass { background: rgba(15, 23, 42, 0.55); backdrop-filter: blur(14px); border: 1px solid rgba(148,163,184,.2); }
+.input { width: 100%; padding: .7rem 1rem; border-radius: .8rem; background: rgba(15,23,42,.8); border: 1px solid rgba(148,163,184,.3); }
+.btn-primary { display: inline-block; padding: .7rem 1rem; border-radius: .8rem; background: linear-gradient(135deg,#3b82f6,#6366f1); }
+.btn-secondary { display: inline-block; padding: .7rem 1rem; border-radius: .8rem; background: rgba(51,65,85,.8); }
+.animated-bg {position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 20% 20%,#312e81,transparent 30%),radial-gradient(circle at 80% 0%,#0f766e,transparent 30%),#020617;animation: pulse 8s infinite alternate;}
+@keyframes pulse { from { filter: hue-rotate(0deg);} to { filter: hue-rotate(20deg);} }

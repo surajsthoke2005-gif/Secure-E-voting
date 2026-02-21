@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title if title else 'Secure E-Voting' }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <div class="animated-bg"></div>
+  <nav class="glass sticky top-0 z-40 mx-6 mt-6 rounded-2xl p-4 flex justify-between items-center">
+    <a href="/" class="font-bold">Secure E-Voting</a>
+    <div class="flex gap-3 items-center">
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+      <a href="/vote">Vote</a>
+      <a href="/admin">Admin</a>
+      <button id="themeToggle" class="px-3 py-1 rounded-lg bg-slate-800">🌙</button>
+    </div>
+  </nav>
+  <main class="container mx-auto px-6 py-10 relative z-10">{% block content %}{% endblock %}</main>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
